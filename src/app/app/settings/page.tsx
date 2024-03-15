@@ -5,14 +5,14 @@ import {
   DashboardPageMain,
 } from "@/components/dashboard/page";
 
-export default async function AppPage() {
+export default async function settings() {
   return (
     <DashboardPage>
       <DashboardPageHeader>
-        <DashboardPageHeaderTitle>Tarefas</DashboardPageHeaderTitle>
+        <DashboardPageHeaderTitle>Configurações</DashboardPageHeaderTitle>
       </DashboardPageHeader>
       <DashboardPageMain>
-        <h1>Tarefas</h1>
+        <h1>Configurações</h1>
       </DashboardPageMain>
     </DashboardPage>
   );
