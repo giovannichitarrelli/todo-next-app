@@ -1,5 +1,5 @@
 import NextAuth from "next-auth"
-import EmailProvider from "next-auth/providers/email"
+import EmailProvider from "next-auth/providers/nodemailer"
 import { PrismaAdapter } from "@auth/prisma-adapter"
 import { Prisma } from "../database"
 export const {
@@ -11,7 +11,7 @@ export const {
     signOut: '/auth',
     error: '/auth',
     verifyRequest: '/auth',
-    newUser: '/app'
+    newUser: '/'
   },
   adapter: PrismaAdapter(Prisma),
   providers: [

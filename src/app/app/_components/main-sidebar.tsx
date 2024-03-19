@@ -1,7 +1,6 @@
 "use client";
 import DashboardSideBar, {
   DashboardSideBarHeader,
-  DashboardSideBarHeaderTitle,
   DashboardSideBarMain,
   DashboardSideBarNav,
   DashboardSideBarNavFooter,
