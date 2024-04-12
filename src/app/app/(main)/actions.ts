@@ -29,7 +29,6 @@ if( !session?.user?.id){
 }
 
     if(input.id){
-
         const todo = await Prisma.todo.findUnique({
             where: {
                 id: input.id,
@@ -80,7 +79,6 @@ if( !session?.user?.id){
 
         return todo
 }
-
 
 export async function deleteTodo(input: z.infer<typeof DeleteTodoSchema>){
     const session = await auth();

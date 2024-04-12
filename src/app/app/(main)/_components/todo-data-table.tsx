@@ -105,7 +105,10 @@ export function TodoDataTable({ data }: TodoDataTable) {
       header: () => <div className="text-right">createdAt</div>,
       cell: ({ row }) => {
         return (
-          <div className="text-right font-medium">
+          <div
+            className="text-right font-medium"
+            suppressHydrationWarning={true}
+          >
             {row.original.createAt.toLocaleDateString()}
           </div>
         );
